@@ -8,8 +8,12 @@ const HomeScreen = ({navigation}) => {
         Welcome!
       </Text>
       <Button
-        title='Go to Counter Demo'
+        title='Go to Counter (using useState) Demo'
         onPress={() => navigation.navigate('Counter')}
+      />
+      <Button
+        title='Go to Counter (using useReducer) Demo'
+        onPress={() => navigation.navigate('CounterReducer')}
       />
       <Button
         title='Go to Color Generator Demo'
