@@ -19,7 +19,9 @@ const CounterScreen = () => {
         onPress={() => {
           // don't do this
           // counter--;
-          setCounter(counter - 1);
+          counter - 1 < 0 ?
+            null :
+            setCounter(counter - 1);
         }}
       />
       <Text>
