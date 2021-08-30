@@ -6,6 +6,7 @@ const TextScreen = () => {
   const [password, setPassword] = useState('');
 
   // Note: TextInput doesn't have any kind of styling
+  // Ref: https://stackoverflow.com/a/29337494
   return (
     <View>
       <Text>
@@ -15,6 +16,7 @@ const TextScreen = () => {
         style={styles.input}
         autoCapitalize='none'
         autoCorrect={false}
+        secureTextEntry={true}
         value={password}
         onChangeText={(newValue) => setPassword(newValue)}
       />
