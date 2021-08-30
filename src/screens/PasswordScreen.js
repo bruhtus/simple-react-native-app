@@ -19,9 +19,7 @@ const TextScreen = () => {
         onChangeText={(newValue) => setPassword(newValue)}
       />
       {password.length == 0 ?
-        <Text>
-          Password cannot be empty
-        </Text> :
+        null :
         password.length < 8 ?
         <Text>
           Password must be at least 8 characters
