@@ -9,6 +9,7 @@ import SquareScreenReducer from "./src/screens/SquareScreenReducer";
 import TextScreen from "./src/screens/TextScreen";
 import PasswordScreen from "./src/screens/PasswordScreen";
 import BoxScreen from "./src/screens/BoxScreen";
+import ExerciseBoxScreen from "./src/screens/ExerciseBoxScreen";
 
 const navigator = createStackNavigator(
   {
@@ -21,6 +22,7 @@ const navigator = createStackNavigator(
     Text: TextScreen,
     Password: PasswordScreen,
     Box: BoxScreen,
+    ExerciseBox: ExerciseBoxScreen,
   },
   {
     initialRouteName: "Home",
